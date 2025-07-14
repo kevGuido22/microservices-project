@@ -8,7 +8,6 @@ Aprender y experimentar con conceptos clave de arquitectura de microservicios, i
 
 - Comunicación entre servicios
 - API Gateway
-- Service Discovery (opcional)
 - Base de datos por servicio
 - Contenedores (Docker)
 - Pruebas unitarias y de integración
