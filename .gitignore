@@ -1,0 +1,21 @@
+# Ignorar archivos del IDE
+.idea/
+*.iml
+
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
+
+# Carpetas de compilación
+target/
+build/
+
+# Archivos temporales
+*.log
+
+# Ignorar data de MySQL
+**/docker/mysql/data/
+**/mysql/
+
+# Variables de entorno
+.env
