@@ -1,21 +1,57 @@
-# Ignorar archivos del IDE
+# === IDEs ===
 .idea/
 *.iml
+*.iws
 
-# Archivos del sistema operativo
+# === Sistema Operativo ===
 .DS_Store
 Thumbs.db
 
-# Carpetas de compilación
+# === Java / Spring Boot ===
 target/
 build/
 
-# Archivos temporales
-*.log
+# Archivos temporales de Spring (SDI, etc.)
+*.tmp
+*.sdi
+*.swp
+*.bak
 
-# Ignorar data de MySQL
+# Logs
+*.log
+logs/
+
+# === Archivos de configuración y entorno ===
+.env
+*.env
+
+# === Docker ===
 **/docker/mysql/data/
 **/mysql/
+**/volume-data/
+**/mysql_keycloak_data/
 
-# Variables de entorno
-.env
+# === Maven ===
+.mvn/
+!.mvn/wrapper/maven-wrapper.jar
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+
+# === Test Reports ===
+test-output/
+surefire-reports/
+jacoco.exec
+
+# === Otros temporales ===
+*.class
+*.war
+*.jar
+*.ear
+
+# === IntelliJ Run Configurations ===
+*.run.xml
