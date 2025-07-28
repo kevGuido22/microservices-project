@@ -1,4 +1,5 @@
 package com.kevin.microservices.product.controller;
+
 import com.kevin.microservices.product.dto.ProductRequest;
 import com.kevin.microservices.product.dto.ProductResponse;
 import com.kevin.microservices.product.model.Product;
@@ -19,13 +20,13 @@ public class ProductController {
 
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
-    public ProductResponse createProduct(@RequestBody ProductRequest productRequest){
+    public ProductResponse createProduct(@RequestBody ProductRequest productRequest) {
         return productService.createProduct(productRequest);
     }
 
     @GetMapping
     @ResponseStatus(HttpStatus.OK)
-    public List<ProductResponse> getAllProducts(){
+    public List<ProductResponse> getAllProducts() {
         return productService.getAllProducts();
     }
 }
